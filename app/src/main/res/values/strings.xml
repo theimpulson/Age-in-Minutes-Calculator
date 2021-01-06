@@ -4,6 +4,6 @@
     <string name="age">AGE</string>
     <string name="in_min">IN MINUTES</string>
     <string name="select_date">Select Date</string>
-    <string name="selected_date">Selected Date</string>
-    <string name="age_in_min">Age in Minutes</string>
+    <string name="selected_date">Selected Date is:</string>
+    <string name="age_in_min">Age in Minutes is:</string>
 </resources>

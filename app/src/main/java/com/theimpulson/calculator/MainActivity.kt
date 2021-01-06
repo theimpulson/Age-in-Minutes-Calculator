@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
             DatePickerDialog.OnDateSetListener { givenview, selectedyear, selectedmonth, selectedday ->
 
                 val selectedDate = "$selectedday/${selectedmonth + 1}/$selectedyear"
-                findViewById<TextView>(R.id.tvSelectedDate).text = selectedDate
+                findViewById<TextView>(R.id.tvSelectedDateFromPicker).text = selectedDate
 
                 val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
                 val thedate = sdf.parse(selectedDate)
@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity() {
                 val selectedDateInMinutes = thedate!!.time / 60000
                 val currentDateInMinutes = currentDate!!.time / 60000
 
-                findViewById<TextView>(R.id.ageInMinutes).text =
+                findViewById<TextView>(R.id.ageInMinutesCalculated).text =
                     (currentDateInMinutes - selectedDateInMinutes).toString()
             }
 
